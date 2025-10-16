@@ -18,7 +18,7 @@ Import-Module OSD -Force
 #=======================================================================
 $Params = @{
     OSVersion = "Windows 11"
-    OSBuild = "22H2"
+    OSBuild = "24H2"
     OSEdition = "Pro"
     OSLanguage = "sv-SE"
     OSLicense = "Retail"
@@ -140,4 +140,5 @@ $SetupCompleteCMD | Out-File -FilePath 'C:\Windows\Setup\Scripts\SetupComplete.c
 #=======================================================================
 Write-Host "Restarting in 20 seconds!" -ForegroundColor Green
 Start-Sleep -Seconds 20
+
 wpeutil reboot
